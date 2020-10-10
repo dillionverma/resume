@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Dillion Verma
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Dillion Verma} \\ \vspace{1pt}
+    \small 415-234-7748 $|$ 
+    \faEnvelope \space \href{mailto:hire@dillionverma.com}{hire@dillionverma.com} $|$ 
+    \faLink \space \href{https://dillionverma.com}{dillionverma.com} $|$
+    \faLinkedin \space \href{https://linkedin.com/in/dillionverma}{dillionverma} $|$
+    \faGithub \space
+    \href{https://github.com/dillionverma}{dillionverma}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NVIDIA}{Santa Clara, CA}
+      {Software Engineer Intern}{January 2020 -- March 2020}
+      \resumeItemListStart
+        \resumeItem{Led a team to architect and write the entire \underline{\href{https://www.nvidia.com/en-us/geforce-now/}{GeForce Now}} internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python}
+        % \resumeItem{Held mini workshops to teach react and transition the current team over from Angular}
+        % \resumeItem{Fully automated the desktop client build process using \textbf{Jenkins} and \textbf{Python}}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Splunk}{San Jose, CA}
+      {Software Engineer Intern}{January 2019 -- April 2019}
+      \resumeItemListStart
+       \resumeItem{Co-developed a prototype iOS app with another intern in Swift for the new \underline{\href{https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html}{Splunk Phantom}} security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas)}
+       \resumeItem{Implemented a REST API for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500\% increase in the speed of data transmission}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Lime}{San Francisco, CA}
+      {Software Engineer Intern}{January 2018 -- April 2018}
+      \resumeItemListStart
+        \resumeItem{Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks}
+        \resumeItem{Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {Mitre Media}{Toronto, ON}
+      {Full Stack Web Developer Intern}{May 2017 -- August 2017}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails}
+        \resumeItem{Leveraged the Yahoo finance API to develop the \underline{\href{https://dividend.com/screener}{dividend.com}} equity screener}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Meme Exchange} $|$ \emph{Vue.js, Ruby on Rails, PostgreSQL, Docker, Kubernetes, Firebase, AWS S3}}
+            {\href{https://meme.exchange}{\faGlobe \space meme.exchange}}
+            \resumeItemListStart
+                \resumeItem{Developed a marketplace for 10K+ beta users to buy and sell memes for a virtual profit}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{Facial Sentiment Intensity Analysis (Undergraduate Research Paper)} $|$ \emph{Tensorflow, Keras}}
+            {\href{https://git.io/JUyi9}{\faGithub \space git.io/JUyi9}}
+            \resumeItemListStart
+                \resumeItem{Developed and trained a Deep Convolutional Neural Network (DCNN) on the ADFES-BIV facial emotions dataset to predict the intensity of human emotions with an average final prediction accuracy of 86\% on unseen data}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{EndlessBlock} $|$ \emph{Python, OpenCV, Tensorflow, Keras}}
+            {\href{https://git.io/fjrgm}{\faGithub \space git.io/fjrgm}}
+            \resumeItemListStart
+                \resumeItem{1st place winner of \underline{\href{https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/}{Toronto's Global AI Hackathon 2017}}}
+                \resumeItem{Developed a game in python which adapts its difficulty based on the players' facial emotions in real-time using OpenCV, and a  Convolutional Neural Network (CNN) trained on the FER-2013 dataset}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{Hearthstone} $|$ \emph{C++, XWindows}}
+            {\href{https://git.io/JesF5}{\faGithub \space git.io/JesF5}}
+            \resumeItemListStart
+                \resumeItem{Developed Hearthstone employing scalable design patterns including MVC, decorator, and observer patterns}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{C++ Compiler} $|$ \emph{C++, MIPS Assembly}}{}
+            \resumeItemListStart
+                \resumeItem{Implemented a complete assembler and compiler (formal language, scanner, lexer, parser, tokenizer, code generator and linker/loader) using C++ and MIPS for a subset of the C++14 language spec}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, JavaScript, Java, SQL (Postgres), MongoDB} \\
+     \textbf{Frameworks}{: React, React Native, Node.js, Django, Ruby on Rails, Docker, Tensorflow, AWS} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Honours Bachelor of Computer Science, B.C.S (Co-op)}{Sept. 2016 -- Dec. 2021}
+    \resumeSubheading
+      {Wilfrid Laurier University}{Waterloo, ON}
+      {Honours Bachelor of Business Administration, B.B.A}{Sept. 2016 -- Dec. 2021}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
